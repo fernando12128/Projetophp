@@ -1,1 +1,0 @@
-SELECT * FROM `formulario-cine`.usuarios;

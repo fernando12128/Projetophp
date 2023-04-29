@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,57 +16,18 @@
 <title>Cine Pirata</title>
 </head>
 <body>
+    <div class="Nome text-center">
+        <h1>Cine Pirata</h1>
+    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light color1 ">
+    <nav class="navbar navbar-expand-lg navbar-light color1">
         <a class="navbar-brand" href="#">Cine Pirata</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="dropdown">
-            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-              Entrar
-            </button>
-
-            <form action = '' class="dropdown-menu p-4" style="">
-
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@exemplo.com">
-                <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
-                
-              </div>
-
-              <div class="mb-3">
-                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-                <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-                
-              </div>
-
-              <div class="mb-3">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                  <label class="form-check-label" for="dropdownCheck2">
-                    Relembrar-me
-                  </label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-light">Logar</button>
-              <br><br>
-              <button type="submit" class="btn btn-light">Cadastrar</button>
-            </form>
-          </div>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Filmes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Opções</a>
-            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
