@@ -20,14 +20,36 @@
         <h1>Cine Pirata</h1>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light color1">
+    <nav class="navbar navbar-expand-lg navbar-light color1 ">
         <a class="navbar-brand" href="#">Cine Pirata</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+      
+        <div class="dropdown">
+            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              Entrar
+            </button>
+
+            <form action = '' class="dropdown-menu p-4" style="">
+
+              <a href="Login.php" class="btn btn-light">Logar</a>
+              <br><br>
+              <a href="cadastrar.php" class="btn btn-light">Cadastrar</a>
+            </form>
+          </div>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Opções</a>
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">

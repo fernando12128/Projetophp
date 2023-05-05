@@ -44,14 +44,14 @@
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control color1" name ='email' id="email" placeholder="Minha princesinha@gmail.com">
         </div>
-      <!--
+      
         <div class="mb-3">
-          <label for="Password" class="form-label">Senha</label>
-          <input type="password" class="form-control color1" id="Senha" placeholder="senha da minha princesinha">
+          <label for="Senha" class="form-label">Senha</label>
+          <input type="password" class="form-control color1" name ='Senha' id="Senha" placeholder="senha da minha princesinha">
         </div>
-      !-->
+      
         <br>
-        <!--<button type="" class="btn btn-primary">Voltar</button> !-->
+        <a href="Home.php" class="btn btn-primary">Voltar</a>
       
         <button type="submit"  name="submit" class="btn btn-primary">cadastrar</button>
 

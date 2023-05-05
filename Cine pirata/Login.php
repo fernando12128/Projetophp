@@ -17,21 +17,24 @@
     
   <body class="p-3 m-0 border-0 bd-example">
     <div class="dropdown-menu color1">
-      <form class="px-4 py-3">
+
+      <form class="px-4 py-3" action ='testeLogin.php' method='POST'>
+
         <div class="mb-3">
-          <label for="exampleDropdownFormEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control color1" id="Email" placeholder="email@gmail.com">
+          <label for="Email" class="form-label">Email</label>
+          <input type="email" class="form-control color1"name='email' id="Email" placeholder="Email">
         </div>
+
         <div class="mb-3">
-          <label for="exampleDropdownFormPassword1" class="form-label">Senha</label>
-          <input type="password" class="form-control color1" id="Senha" placeholder="senha">
+          <label for="Senha" class="form-label">Senha</label>
+          <input type="password" class="form-control color1" name='Senha'id="Senha" placeholder="Senha">
         </div>
+
         <br>
-        <button type="submit" class="btn btn-primary">
-          
-        <a href="Cine.php" class="color2">Logar</a></button>
-        <button type="submit" class="btn btn-primary">
-        <a href="cadastrar.php" class="color2">Cadastrar</a></button>
+
+        <input type="submit" name='senha' value='Logar' class="btn btn-primary">
+
+        <a href="cadastrar.php" class="btn btn-primary">Cadastrar</a>
 
       </form>
       
