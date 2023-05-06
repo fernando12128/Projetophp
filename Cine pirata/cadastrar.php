@@ -51,7 +51,7 @@
         </div>
       
         <br>
-        <a href="Home.php" class="btn btn-primary">Voltar</a>
+        <a href="index.php" class="btn btn-primary">Voltar</a>
       
         <button type="submit"  name="submit" class="btn btn-primary">cadastrar</button>
 
