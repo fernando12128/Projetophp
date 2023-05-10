@@ -31,27 +31,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                
+              <!--  <tr>
                     <td>kkkkkkk</td>
                     <td>14/02/5222</td>
                     <td><button class="btn">Editar</button>
                         <button class="btn btn1">Excluir</button>
                     </td>
-                </tr>
-                <tr>
-                    <td>kkkkkkk</td>
-                    <td>14/02/5222</td>
-                    <td><button class="btn">Editar</button>
-                        <button class="btn btn1">Excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>kkkkkkk</td>
-                    <td>14/02/5222</td>
-                    <td><button class="btn">Editar</button>
-                        <button class="btn btn1">Excluir</button>
-                    </td>
-                </tr>
+                </tr> !-->
+               
+                
             </tbody>
         </Table>
     </div>
