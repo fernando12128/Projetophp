@@ -1,5 +1,6 @@
+<?php include("conexao.php"); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel ="stylesheet" href="css/estilo.css">
     <link rel ="stylesheet" href="css/estilo2.css">
     <title>Adm</title>
 
@@ -18,32 +20,60 @@
 </div>
 
 <div class="card color1">
-    <div class="card-body">
-        <h4>CRUD|FILMES</h4>
-        <hr>
-        <button class="btn color2"><h4>Adicionar</h4></button>
-        <Table class="table">
-            <thead>
-                <tr>
-                    <th>Nome do filme</th>
-                    <th>Data de upload</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-              <!--  <tr>
-                    <td>kkkkkkk</td>
-                    <td>14/02/5222</td>
-                    <td><button class="btn">Editar</button>
-                        <button class="btn btn1">Excluir</button>
-                    </td>
-                </tr> !-->
-               
-                
-            </tbody>
-        </Table>
-    </div>
+<section>
+
+    <form action="contato-alterar.php" method="post">      
+        <div>
+        <input type="hidden" name="txIdContato" value="<?php echo @$_GET['id']; ?>" />
+        </div>		
+
+        <div>
+            <input type="text" placeholder="Nome" name="txNome" value="<?php echo @$_GET['nome']; ?>" />
+        </div>		
+
+        <div>
+            <input type="text" placeholder="E-mail" name="txEmail" value="<?php echo @$_GET['email']; ?>" />
+        </div>		
+
+        <div>
+            <input type="submit" value="Salvar" />
+        </div>
+    </form>
+
+</section>
+
+
+<section>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+            $stmt = $conexao->prepare("select * from usuarios");	
+            $stmt ->execute();
+            
+            while($row = $stmt ->fetch(mysqli::FETCH_BOTH)){
+              echo "<tr class='celula'>";
+                echo "<td> $row[0] </td>";						
+                echo "<td> $row[1] </td>";						
+                echo "<td> $row[2] </td>";						
+
+                echo "<td> 
+                        <a href='?id=$row[0]&nome=$row[1]&email=$row[2]'> Editar </a>
+                        <a href='contato-remover.php?id=$row[0]'> Remover </a>
+                      </td>";
+              echo "</tr>";
+            }	
+        ?>
+        </tbody>
+    </table>
+</section>
 </div>
 
 
