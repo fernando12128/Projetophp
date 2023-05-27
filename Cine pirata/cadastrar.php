@@ -6,11 +6,12 @@
       // print_r('Email: ' . $_POST['email']);
       include('conexao.php');
 
-      $nome = $_POST['nome'];
-      $email = $_POST['email'];
+      //$nome = $_POST['nome'];
+      //$email = $_POST['email'];
       //$senha = $_POST['senha'];
 
-      $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email) VALUES('$nome','$email')");
+      //$stmt = $pdo->prepare("INSERT INTO usuarios(nome,email) VALUES('$nome','$email')");
+      //$stmt -> execute();
     }
 ?>
 
@@ -33,7 +34,7 @@
     
   <body class="p-3 m-0 border-0 bd-example">
     <div class="dropdown-menu color1">
-      <form class="px-4 py-3" action="cadastrar.php" method = "POST">
+      <form class="px-4 py-3" action="Salvandobc.php" method = "POST">
 
         <div class="mb-3"  class="img-fluid" alt="...">
           <label for="nome" class="form-label">Nome</label>

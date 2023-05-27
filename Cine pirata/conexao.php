@@ -1,8 +1,8 @@
 <?php
-	$dbhost = 'Localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'formulario-cine';
+	$servidor="localhost";
+	$banco="formulariocine";
+	$usuario="root";
+	$senha="";
 
-    $conexao = new mysqli($dbhost, $dbUsername,$dbPassword, $dbName );
+	$pdo = new PDO("mysql:host=$servidor;dbname=$banco",$usuario,$senha);		
 ?>
