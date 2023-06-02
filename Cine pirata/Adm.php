@@ -55,10 +55,10 @@
         </thead>
         <tbody>
         <?php
-            $stmt = $conexao->prepare("select * from usuarios");	
+            $stmt = $pdo->prepare("select * from usuarios");	
             $stmt ->execute();
             
-            while($row = $stmt ->fetch(mysqli::FETCH_BOTH)){
+            while($row = $stmt ->fetch(PDO::FETCH_BOTH)){
               echo "<tr class='celula'>";
                 echo "<td> $row[0] </td>";						
                 echo "<td> $row[1] </td>";						
