@@ -1,12 +1,12 @@
 <?php
     $nome = $_POST['txNome'];
     $email = $_POST['txEmail'];
-    $senha = $_POST['txSenha'];
+    $sena = $_POST['txSenha'];
         
-    include("cadastrar.php");
+    include("conexao.php");
 
-    $stmt = $pdo->prepare("insert into usuarios values(null,'$nome','$email','$senha')");	    
-	$stmt ->execute();    
+    $stmt = $pdo->prepare("insert into usuarios values(null,'$nome','$email','$sena')");	    
+	$stmt ->execute();   
 
     header("location:cadastrar.php");    
 ?>

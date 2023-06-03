@@ -1,18 +1,5 @@
 <?php 
-
-    if(isset($_POST['submit'])){
-      //print_r('Nome: ' . $_POST['nome']);
-      // print_r('<br>');
-      // print_r('Email: ' . $_POST['email']);
       include('conexao.php');
-
-      //$nome = $_POST['nome'];
-      //$email = $_POST['email'];
-      //$senha = $_POST['senha'];
-
-      //$stmt = $pdo->prepare("INSERT INTO usuarios(nome,email) VALUES('$nome','$email')");
-      //$stmt -> execute();
-    }
 ?>
 
 <!doctype html>
@@ -44,20 +31,20 @@
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
+          <label for="mail" class="form-label">Email</label>
           <input type="email" class="form-control color1" name ='txEmail' id="email" placeholder="Minha princesinha@gmail.com">
         </div>
       
         <div class="mb-3">
           <label for="Senha" class="form-label">Senha</label>
-          <input type="password" class="form-control color1" name ='txSenha' id="Senha" placeholder="senha da minha princesinha">
+          <input type="password" class="form-control color1" name ='txSenha' id="Senha" placeholder="Senha da minha princesinha">
         </div>
       
         <br>
-        <a href="Login.php" class="btn btn-primary">Ja tenho conta</a>
-      
+        
         <button type="submit"  name="submit" class="btn btn-primary">cadastrar</button>
 
+        <a href="Login.php" class="btn btn-primary">Ja tenho conta</a>
       </form>
 
     </div>

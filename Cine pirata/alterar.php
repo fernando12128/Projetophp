@@ -13,6 +13,6 @@
     ");	    
 	$stmt ->execute();    
 
-    header("location:contato-lista.php");    
+    header("location:adm.php");    
     
 ?>

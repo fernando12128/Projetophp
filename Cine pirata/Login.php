@@ -22,7 +22,7 @@
 
         <div class="mb-3">
           <label for="Email" class="form-label">Email</label>
-          <input type="email" class="form-control color1"name='email' id="Email" placeholder="Email">
+          <input type="email" class="form-control color1" name='email' id="Email" placeholder="Email">
         </div>
 
         <div class="mb-3">

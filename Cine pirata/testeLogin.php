@@ -1,26 +1,20 @@
 <?php 
 
-    //print_r($_REQUEST);
+    $email = $_POST['email'];
+    $senha = $_POST['Senha'];
 
-    if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['Senha'])){
+    include("conexao.php");
 
+    $stmt = $pdo ->prepare("select * from usuarios where email='$email' and senha='$senha'");
+    $stmt -> execute();
 
-        include_once('conexao.php');
-        $email = $_POST['email'];
-        $senha = $_POST['Senha'];
+    $row = $stmt ->fetch(PDO::FETCH_BOTH);
 
-        //print_r('Email: ' . $email);
-        //print_r('<br>');
-        //print_r('Senha: ' . $senha);
-
-        $sql = "SELECT * FROM usuarios WHERE email = '$email' and Senha = '$senha'";
-
-        $result = $conexao->query($sql);
-
-        print_r ($result);
-
-    }else{
-        header('Location : login.php');
+    if($row[2]==null){
+        header('Location: Login.php?mensagem=usuario e/ou senha incorreta');
+    }
+    else{
+        header('Location: index.php');
     }
 
 ?>
