@@ -34,25 +34,27 @@
     
   <body class="p-3 m-0 border-0 bd-example">
     <div class="dropdown-menu color1">
-      <form class="px-4 py-3" action="Salvandobc.php" method = "POST">
+
+
+      <form class="px-4 py-3" action="Salvandobc.php" method ="POST">
 
         <div class="mb-3"  class="img-fluid" alt="...">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control color1" name ='nome' id="nome" placeholder="Nome da minha princesinha">
+          <input type="text" class="form-control color1" name ='txNome' id="nome" placeholder="Nome da minha princesinha">
         </div>
 
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control color1" name ='email' id="email" placeholder="Minha princesinha@gmail.com">
+          <input type="email" class="form-control color1" name ='txEmail' id="email" placeholder="Minha princesinha@gmail.com">
         </div>
       
         <div class="mb-3">
           <label for="Senha" class="form-label">Senha</label>
-          <input type="password" class="form-control color1" name ='Senha' id="Senha" placeholder="senha da minha princesinha">
+          <input type="password" class="form-control color1" name ='txSenha' id="Senha" placeholder="senha da minha princesinha">
         </div>
       
         <br>
-        <a href="index.php" class="btn btn-primary">Voltar</a>
+        <a href="Login.php" class="btn btn-primary">Ja tenho conta</a>
       
         <button type="submit"  name="submit" class="btn btn-primary">cadastrar</button>
 

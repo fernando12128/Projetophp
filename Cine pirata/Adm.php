@@ -13,36 +13,20 @@
     <title>Adm</title>
 
 </head>
+
+
 <body>
     
 <div class="Nome text-center">
         <h1>Cine Pirata</h1>
 </div>
 
+<Style>
+
+</Style>
+
+
 <div class="card color1">
-<section>
-
-    <form action="contato-alterar.php" method="post">      
-        <div>
-        <input type="hidden" name="txIdContato" value="<?php echo @$_GET['id']; ?>" />
-        </div>		
-
-        <div>
-            <input type="text" placeholder="Nome" name="txNome" value="<?php echo @$_GET['nome']; ?>" />
-        </div>		
-
-        <div>
-            <input type="text" placeholder="E-mail" name="txEmail" value="<?php echo @$_GET['email']; ?>" />
-        </div>		
-
-        <div>
-            <input type="submit" value="Salvar" />
-        </div>
-    </form>
-
-</section>
-
-
 <section>
     <table class="table table-striped">
         <thead>

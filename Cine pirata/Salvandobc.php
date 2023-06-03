@@ -5,7 +5,7 @@
         
     include("cadastrar.php");
 
-    $stmt = $pdo->prepare("insert into tbcontato values(null,'$nome','$email','$Senha')");	    
+    $stmt = $pdo->prepare("insert into usuarios values(null,'$nome','$email','$senha')");	    
 	$stmt ->execute();    
 
     header("location:cadastrar.php");    

@@ -2,7 +2,7 @@ Create database formulariocine;
 
 use formulariocine;
 
-CREATE TABLE usuarios (  id int(10) unsigned NOT NULL AUTO_INCREMENT,  nome varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,  email varchar(145) COLLATE utf8mb4_unicode_ci NOT NULL,PRIMARY KEY (id));
+CREATE TABLE usuarios (  id int(10) unsigned NOT NULL AUTO_INCREMENT,  nome varchar(45)  NOT NULL,  email varchar(145)  NOT NULL, senha varchar(45) NOT NULL ,PRIMARY KEY (id));
 
 CREATE TABLE tbfilme (idFilme int(11) NOT NULL AUTO_INCREMENT,filme varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,idGenero int(11) DEFAULT NULL,PRIMARY KEY (idFilme),KEY idGenero (idGenero));
 
