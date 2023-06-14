@@ -1,3 +1,14 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#logo {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 body{
     background-color: rgb(25, 18, 32);
 }
@@ -8,4 +19,14 @@ h1{
 
 .color1{
     background-color:#ededed;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+label {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
