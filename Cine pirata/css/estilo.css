@@ -30,3 +30,28 @@ label {
     color: white;
     border-radius: 5px;
 }
+
+.rodo
+{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodo h1
+{
+    font-size: 10vh;
+    text-transform: uppercase;
+
+}
+
+footer
+{
+    width: 100%;
+    min-height: 250px;
+    background: black;
+    display: flex;
+}
+
