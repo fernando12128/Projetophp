@@ -5,7 +5,9 @@ if(isset($_FILES["arqimage"])){
     $arqINome = $_FILES["arqimage"]["name"];
     $arqITipo = $_FILES["arqimage"]["type"];
     $arqITamanho = $_FILES["arqimage"]["size"];
+    
     $arqINOMETemp = $_FILES["arqimage"]["tmp_name"];
+
     $erroImgMarc = $_FILES["arqimage"]["error"];
 
     if($erroImgMarc==0){

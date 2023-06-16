@@ -1,20 +1,7 @@
 body{
-    background-color: rgb(49, 47, 47);
+    background-color: rgb(25, 18, 32);
 }
 
 h1{
     color:#3996ad;
 }
-
-.color1{
-    background-color:#ededed;    
-}
-
-.color2{
-      color: white;
-}
-
-input[type="file"]{
-    display: none;
-}
-
