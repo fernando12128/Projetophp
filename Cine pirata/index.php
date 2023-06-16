@@ -176,26 +176,29 @@
     <h1>Roda o Pé</h1>
 
     <footer>
-      <div class="box">
-        <h2>Inicio<h2>
-            <ul>
-              <li><a href="Home"></a></li>
-              <li><a href="Generos"></a></li>
-
-            </ul>
-      </div>
-      <div class="box">
-        <h2>Colaboradores<h2>
-            <ul>
-              <li><a href="jonathan"></a></li>
-              <li><a href="Ezequiel"></a></li>
-              <li><a href="Fernando"></a></li>
-            </ul>
-      </div>
-
-
-
-    </footer>
+    <div class="boxs">
+      <h2>Inicio<h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Download</a></li>
+          </ul>
+    </div>
+    <div class="boxs">
+      <h2>Informações<h2>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+    </div>
+    <div class="boxs">
+      <h2>Sobre Nós</h2>
+      <p>
+        
+      </p>
+    </div>
+  </footer>
 
   </div>
 
