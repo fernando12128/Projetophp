@@ -11,6 +11,6 @@ CREATE TABLE tbfilme (idFilme int(11) NOT NULL AUTO_INCREMENT,filme varchar(220)
 
 estou usando esse aq
 
-CREATE TABLE tbfilme (idFilme int(11) AUTO_INCREMENT,filme varchar(220) ,imag Varchar(220) ,genero Varchar(20),PRIMARY KEY (idFilme));
+CREATE TABLE tbfilme (idFilme int(11) AUTO_INCREMENT,filme varchar(220) ,imag Varchar(220) ,genero Varchar(20),urr Varchar(330),PRIMARY KEY (idFilme));
 
 
