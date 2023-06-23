@@ -83,6 +83,9 @@ include('conexao.php');
 <label  for="urr" >Genero do filme:</label>
 <input type="text" name="urr" placeholder="Url do filme">
 
+<label  for="sino" >Sinopse do filme:</label>
+<input type="text" name="sino" placeholder="Sinopse do filme">
+
 
 
 <br>

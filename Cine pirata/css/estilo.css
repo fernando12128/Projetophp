@@ -90,9 +90,6 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
 }
-input[ty]{
-
-}
 
 
 
@@ -139,7 +136,7 @@ input[ty]{
 
 
 
-/* 
+
 
 @media(max-width:1000px) {
 
@@ -153,5 +150,5 @@ input[ty]{
     footer .boxs:nth-child(4) {
         width: 100%;
     }
-} */
+} 
 

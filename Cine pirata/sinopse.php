@@ -1,3 +1,4 @@
+<?php include_once('conexao.php');?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -57,32 +58,27 @@
       </nav>
       
 </header>
-<body>
-    
-    <section>
-        <table>
-            <tbody>
-            <?php
-                $stmt = $pdo->prepare("select * from tbfilme");	
-                $stmt ->execute();
-                
-                while($row = $stmt ->fetch(PDO::FETCH_BOTH)){
-                  echo "<tr class='celula'>";
-                    echo "<td> $row[0] </td>";						
-                    echo "<td> $row[1] </td>";						
-                    echo "<td> $row[2] </td>";
-                    echo "<td> $row[3] </td>";						
-    
-                    echo "<td> 
-                            <a class='btn btn-warning' href='?id=$row[0]&nome=$row[1]&email=$row[2]'> Editar </a>
-                            <a class='btn btn-danger' href='remover.php?id=$row[0]'> Remover </a>
-                          </td>";
-                  echo "</tr>";
-                }	
-            ?>
-            </tbody>
-        </table>
-    </section>
+ 
+  
+<div class="texto-centralizado">
+  
+      <div class="movie-details">
+      <?php
+          // $idd = $_GET['id'];
+          $idd = 2;
+
+          $stmt = $pdo->prepare("Select * from tbfilme where idFilme = $idd");	
+          $stmt ->execute();       
+               while($row = $stmt ->fetch(PDO::FETCH_BOTH)){
+          echo"<a target='_blank' href='$row[4]'> <img src='img/$row[2]' alt=''></a>";
+          echo"<h2>$row[1]</h2>";
+          echo"<p><strong>Genero: </strong> $row[3];</p>";
+          echo"<p><strong>Sinopse: </strong> $row[5] </p>";
+            }?>
+      </div>
+</div>
+  </div>
+
 
 </body>
 </html>

@@ -4,13 +4,10 @@ use formulariocine;
 
 CREATE TABLE usuarios (  id int(10) unsigned NOT NULL AUTO_INCREMENT,  nome varchar(45)  NOT NULL,  email varchar(145)  NOT NULL, senha varchar(45) NOT NULL ,PRIMARY KEY (id));
 
-CREATE TABLE tbfilme (idFilme int(11) NOT NULL AUTO_INCREMENT,filme varchar(220) COLLATE utf8mb4_unicode_ci ,imagem Varchar(220) ,genero Varchar(20),PRIMARY KEY (idFilme),);
+CREATE TABLE tbfilme (idFilme int(11) AUTO_INCREMENT,filme varchar(220) ,imag Varchar(220) ,genero Varchar(20),urr Varchar(330) ,sinopse Varchar(500) ,PRIMARY KEY (idFilme));
 
 
 
 
-estou usando esse aq
-
-CREATE TABLE tbfilme (idFilme int(11) AUTO_INCREMENT,filme varchar(220) ,imag Varchar(220) ,genero Varchar(20),urr Varchar(330),PRIMARY KEY (idFilme));
 
 

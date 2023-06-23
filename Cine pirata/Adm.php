@@ -20,20 +20,33 @@
 <body>
     
 <div class="Nome text-center Logo" >
-       <a href="index.html"><h1>Cine Pirata</h1></a> 
+      <h1>Cine Pirata</h1>
 </div>
-<!--
-<div>
-     <form action="guardar-imagem.php" enctype="multipart/form-data" method="post"> 
-        
 
-        <input id = "arqimg" type='file' name="arqimage"  class='form-control-file' />
-        <label for="arqimg">Coloque sua Imagem</label>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Cine Pirata</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="imagem.php">Cadastrar imagem</a>
+        </li>
 
-        <input type="submit" value="Salvar"/>
-     </form>    
-</div>
--->
+        <li class="nav-item">
+          <a class="nav-link disabled">Opções</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
 
 <div class="card color1">
